@@ -68,10 +68,14 @@ a.material-icons:focus{
   .md-sidenav-left.md-whiteframe-z2{
     visibility: hidden;
   }
-
   .navbar.navbar-default.navbar-fixed-top{
     visibility: visible;
     background: #ff6666;
   }
+
+ .navbar-default .navbar-brand{
+   color: white;
+   font-weight: bolder;
+ }
 
 	}
