@@ -1,0 +1,61 @@
+@font-face {
+    font-family:proxima;
+    src: url(../fonts/ProximaNovaSoft-Regular.otf);
+}
+
+@font-face {
+    font-family:proxima bold;
+    src: url(../fonts/ProximaNovaSoft-Bold.otf);
+}
+
+html{
+  font-family: roboto;
+}
+
+a{
+text-decoration: none;
+}
+
+a:hover{
+  text-decoration:
+}
+
+
+a.material-icons{
+  color: white;
+  font-size: 40px;
+  margin-left: 15px;
+  margin-top: 40px;
+}
+
+a.material-icons:hover{
+  font-size: 60px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+a.material-icons:focus{
+  text-decoration: none;
+}
+
+
+.img-circle.profile{
+  width: 45px;
+  margin-left: 10px;
+  margin-top: 300px;
+}
+
+
+.md-sidenav-left.md-whiteframe-z2{
+  background: #ff6666;
+  width: 70px;
+}
+
+@media (max-width: 1920px) {
+  .img-circle.profile{
+    width: 45px;
+    margin-left: 10px;
+    margin-top: 230px;
+  }
+
+}
