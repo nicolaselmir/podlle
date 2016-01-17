@@ -21,6 +21,7 @@ a:hover{
 }
 
 
+
 a.material-icons{
   color: white;
   font-size: 40px;
@@ -51,11 +52,25 @@ a.material-icons:focus{
   width: 70px;
 }
 
+.navbar.navbar-default.navbar-fixed-top{
+  visibility: hidden;
+}
+
 @media (max-width: 1920px) {
   .img-circle.profile{
     width: 45px;
     margin-left: 10px;
     margin-top: 230px;
   }
-
 }
+
+@media only screen and (max-device-width: 480px) {
+  .md-sidenav-left.md-whiteframe-z2{
+    visibility: hidden;
+  }
+
+  .navbar.navbar-default.navbar-fixed-top{
+    visibility: visible;;
+  }
+
+	}
