@@ -70,7 +70,8 @@ a.material-icons:focus{
   }
 
   .navbar.navbar-default.navbar-fixed-top{
-    visibility: visible;;
+    visibility: visible;
+    background: #ff6666;
   }
 
 	}
