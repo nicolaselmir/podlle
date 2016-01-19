@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "_default": {
+      "link": "podlle"
+    },
+    "podlle": {
+      "applicationId": "JsFA35G6SM4h5uvFhmUTkudrfoVvpJfE4DyuHvPZ"
+    }
+  }
+}
