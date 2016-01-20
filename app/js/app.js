@@ -22,6 +22,10 @@ PodlleApp.config(['$routeProvider',
             when('/profile', {
                 templateUrl: 'app/views/profile.html'
             }).
+            when('/hello', {
+                templateUrl: 'app/views/profile.html'
+            }).
+
             otherwise({
 
             });

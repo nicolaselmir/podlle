@@ -1,7 +1,4 @@
-@font-face {
-    font-family:proxima;
-    src: url(../fonts/ProximaNovaSoft-Regular.otf);
-}
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 
 @font-face {
     font-family:proxima bold;
@@ -9,7 +6,7 @@
 }
 
 html{
-  font-family: roboto;
+  font-family: Verela Round;
 }
 
 a{
@@ -44,6 +41,7 @@ a.material-icons:focus{
   width: 45px;
   margin-left: 10px;
   margin-top: 300px;
+  position: sticky;;
 }
 
 
