@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="PodlleApp" ng-controller="podlleCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="">
+    <meta name="author" content="Podlle">
+    <title>Podlle</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="app/assets/css/paper.css">
+    <link rel="stylesheet" href="app/assets/css/dashboard.css">
+    <link rel="stylesheet" href="app/components/angular-material/angular-material.min.css">
+</head>
+
+<body>
+
+  <!-- Fixed navbar -->
+     <nav class="navbar navbar-default navbar-fixed-top">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">podlle</a>
+         </div>
+         <div id="navbar" class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+             <li class="active"><a href="#">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#contact">Contact</a></li>
+             <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><a href="#">Action</a></li>
+                 <li><a href="#">Another action</a></li>
+                 <li><a href="#">Something else here</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li class="dropdown-header">Nav header</li>
+                 <li><a href="#">Separated link</a></li>
+                 <li><a href="#">One more separated link</a></li>
+               </ul>
+             </li>
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="../navbar/">Default</a></li>
+             <li><a href="../navbar-static-top/">Static top</a></li>
+             <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+
+<div layout="column" style="height:500px;" ng-cloak>
+ <section layout="row" flex>
+   <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')">
+
+     <md-content layout-padding ng-controler="LeftCtrl">
+          <a href="#"<i class="material-icons">dashboard</i></a>
+          <a href="#/explore"<i class="material-icons">explore</i></a>
+          <a href="#/radio"<i class="material-icons">radio</i></a>
+          <a href="#/favorites"<i class="material-icons">favorite</i></a>
+        <a href="#/profile" > <img class="img-circle profile" src="https://scontent-frt3-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/11011288_1036066603077833_8027400463769780072_n.jpg?oh=d2eede6c0af78a218dfb99906fddc356&oe=5717000E" alt="profile" /></a>
+     </md-content>
+   </md-sidenav>
+   <md-content flex layout-padding>
+
+        <div ng-view></div>
+   </md-content>
+
+ </section>
+</div>
+
+
+
+<script src="app/components/angular/angular.js"></script>
+<script src="app/components/angular-animate/angular-animate.js"></script>
+<script src="app/components/angular-route/angular-route.js"></script>
+<script src="app/components/angular-resource/angular-resource.js"></script>
+<script src="app/components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+<script src="app/components/jquery/dist/jquery.js"></script>
+<script src="app/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="app/components/angular-messages/angular-messages.min.js"></script>
+<script src="app/components/angular-material/angular-material.min.js"></script>
+<script src="app/components/parse/parse.js"></script>
+<script src="app/components/parse/parse.min.js"></script>
+<script src="app/components/soundcloud/sdk.js"></script>
+
+
+<script src="app/js/app.js"></script>
+<script src="app/js/animations.js"></script>
+<script src="app/js/directives.js"></script>
+<script src="app/js/controllers.js"></script>
+<script src="app/js/filters.js"></script>
+<script src="app/js/services.js"></script>
+<script src="app/js/scripts.js"></script>
+
+<script type="text/javascript">
+</script>
+
+</body>
+</html>

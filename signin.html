@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>podlle | sign in</title>
+  <link rel="stylesheet" href="app/assets/css/paper.css">
+  <link rel="stylesheet" href="app/assets/css/signin.css">
+</head>
+
+  <body>
+
+
+ <div class="col-md-4 sgnin-part">
+   <h1 class="title">podlle</h1>
+   <h2 class="title-2">Login Now</h2>
+
+   <form class="form-group" action="index.html" method="post">
+        <input type="text" class="form-control name" id="signin-username" placeholder="Usernname">
+        <input type="password" class="form-control password" id="signin-password" placeholder="Password">
+        <label class="keep"><input type="checkbox"> keep me on podlle</label>
+        <a href="" id="signin-submit" class="btn btn-default okay">Okay</a>
+   </form>
+
+    <a class="btn btn-default fb" id="fb" href="#">Login with facebook</a>
+
+
+ </div>
+
+ <div class="col-md-8 signin-blanck">
+
+</div>
+
+
+<script src="app/components/jquery/dist/jquery.js"></script>
+<script src="app/components/parse/parse.min.js"></script>
+<script type="text/javascript" src="app/js/signin.js"></script>
+
+<script type="text/javascript">
+
+Parse.initialize("FRnerZmSNDqaLZ5mMrGIouzuwgTAtXdKd4PcqYZG", "aS2LVfIdjXzKLekxZ8vHnCtplnu685EwrpmdSw2J");
+var item = Parse.Object.extend("User");
+
+$("#signin-submit").click(function(event){
+
+ event.preventDefault();
+
+var username = $("#signin-username").val();
+var password = $("#signin-password").val();
+
+Parse.User.logIn(username,password);
+
+});
+
+
+</script>
+
+  </body>

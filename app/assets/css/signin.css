@@ -24,41 +24,58 @@ body{
 .col-md-8.signin-blanck{
  background-color: #ff6666;
  height: 100%;
+ visibility: visible;;
 }
 
 .title{
   color: #ff6666;
   font-family: proxima bold;
-  margin-left: 10px;
+  margin-left: 30px;
   font-size: 40px;
+  text-align: left;
+}
+
+.title-up{
+  color: #ff6666;
+  font-family: proxima bold;
+  margin-left: 30px;
+  font-size: 35px;
+  text-align: center;;
 }
 
 .title-2{
   color: grey;
   font-family: Varela Round;
-  margin-left: 10px;
+  margin-left: 30px;
   margin-top: 59px;
-  text-align: center;
-  font-size: 35px;
+  text-align: left;
+  font-size: 30px;
 }
 
+.parag-up{
+  color: grey;
+  font-family: Varela Round;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 30px;
+}
 
 .form-control.name{
   font-family: Varela Round;
   color: grey;
-  width: 200px;
+  width: 250px;
   text-align: left;
-  margin-left: 80px;
-  margin-top: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
   margin-bottom: -20px;
 }
 
 .form-control.password{
   font-family: Varela Round;
   color: grey;
-  width: 200px;
+  width: 250px;
   text-align: left;
-  margin-left: 80px;
+  margin-left: 50px;
   margin-top: 40px;
   margin-bottom: -20px;
 }
@@ -69,12 +86,12 @@ body{
   border-color: transparent;
   color: white;
   margin-top: 100px;
-  margin-left: -140px;
+  margin-left: -130px;
 }
 
 .keep{
-  margin-left: 80px;
-  margin-top: -30px;
+  margin-left: 50px;
+  margin-top: -20px;
 }
 
 .signup{
@@ -93,17 +110,18 @@ a.sign-link:hover{
 }
 
 .btn.btn-default.continue{
-  margin-top: 60px;
+  margin-top: 0px;
   background-color: #ff6666;
   color: white;
-  margin-left: 80px;
   margin-bottom:-100px;
+  margin-left: 35px;
   font-family: proxima bold;
+  border-color: #ff6666;
 }
 
 .btn.btn-default.fb{
- margin-left: 80px;
- margin-top: 90px;
+ margin-left: 50px;
+ margin-top: 50px;
  background-color: #3b5998;
  border-color: transparent;
  font-family: proxima bold;
@@ -129,8 +147,42 @@ a.sign-link:hover{
   margin-top: 50px;
 }
 
+.form-control.selector > option{
+  color: grey;
+}
+
 .modal-title{
   text-align: center;
   font-family: proxima bold;
   color: #ff6666;
+}
+
+.md-sidenav-left{
+  background-color: white;
+  width: 600px;
+}
+
+
+.form-control.signup{
+  width: 350px;
+  margin-top: 20px;
+}
+
+.col-md-4.form-container{
+margin-left: 5%;
+}
+
+@media (max-width:480px) {
+
+  .col-md-4.form-container{
+  margin-left: -10%;
+  }
+
+  .col-md-8.signin-blanck{
+   background-color: red;
+   visibility: hidden;
+  }
+  .col-md-4.sgnin-part{
+    height: auto;
+  }
 }
